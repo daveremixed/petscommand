@@ -11,8 +11,20 @@ public class Pet {
     String gender;
     String zipCode;
     String reproduction;
-    //List<PetRecordItem> petRecords;
 
+    public Pet() {
+
+    }
+
+    // Copy Constructor
+    public Pet(Pet pet) {
+        this.id = pet.id;
+        this.name = pet.name;
+        this.type = pet.type;
+        this.gender = pet.gender;
+        this.zipCode = pet.zipCode;
+        this.reproduction = pet.reproduction;
+    }
 
     public String getId() {
         return id;
@@ -62,8 +74,5 @@ public class Pet {
         this.reproduction = reproduction;
     }
 
-//    public List<PetRecordItem> getPetRecords() {
-//        return ImmutableList.copyOf(petRecords);
-//    }
 
 }
