@@ -54,15 +54,35 @@ In your opinion, what’s helpful about version control systems? What’s annoyi
 
 =========
 NOTES:
+
 Strings used for Ids because it allows for more flexibility
+Separated gender of animal from its ability to reproduce for more robust searches.
+full zipcodes are supported.
+headers in csv file should be thrown out silently, so with/without supported
 
 Decided to use POJOs instead of spring based on requirements.  I have other projects that use Spring.
 
 expediency:
 Since HashMap is just a temporary repository, no effort made to make this threadsafe.
-Assume no headers in CSV file -- should work if headers are present -- header row will be thrown out
 If repetitions in IDs they will be overwritten silently
 If bad formatting in input, will be thrown out silently
 Searching will be case sensitive on the value side
-
 Ran into timebox on searches -- but the PetRepository has completed search in methods.,
+SearchString must have no spaces and be in format [ key:value,key:value,... ]
+can only search for one value in each category at a time
+
+easy persistence:
+was going to add writing and reading the files to/from JSON each execution (timeboxed)
+
+Calculating costs
+PetRecordItem would be used to log information and cost basis / fees for the pet, and a list of these were
+to be attached to the record
+
+unfinished:
+wiring up search string to command line - see code and tests for current behavior
+
+Testing:
+Added some unit tests, more needed but timeboxed.
+
+VCS:
+I appreciate version control, and only rarely got into difficult situations to unwind with them.

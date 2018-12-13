@@ -30,6 +30,8 @@ public class PetRepository {
         pets.put(pet.getId(), pet);
     }
 
+    //Performance of this search is Order-N
+    //This really should be optional as well
     public List<Pet> searchForPets(String searchString) {
         Map<String, String> searchMap = getSearchMapFromString(searchString);
 
@@ -52,6 +54,7 @@ public class PetRepository {
         return Optional.empty();
     }
 
+    //This function can be refactored out of class... pass the search map into the class.
     Map<String, String> getSearchMapFromString(String searchString) {
         Map<String, String> searchOptions = new HashMap<>();
 

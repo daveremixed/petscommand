@@ -1,8 +1,7 @@
-package com.gonzobeans.codesample.petscmd.Service;
+package com.gonzobeans.codesample.petscmd.service;
 
 import com.gonzobeans.codesample.petscmd.model.Pet;
 import com.gonzobeans.codesample.petscmd.repository.PetRepository;
-import com.gonzobeans.codesample.petscmd.service.CsvInputReader;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,6 @@
-package com.gonzobeans.codesample.petscmd.Service;
+package com.gonzobeans.codesample.petscmd.service;
 
 import com.gonzobeans.codesample.petscmd.model.Pet;
-import com.gonzobeans.codesample.petscmd.service.PetConverter;
 import org.junit.Assert;
 import org.junit.Test;
 
