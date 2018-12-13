@@ -46,7 +46,6 @@ public class PetRepository {
         return searchList;
     }
 
-
     public Optional<Pet> getPetById(String id) {
         if (pets.containsKey(id)) {
             return Optional.of(new Pet(pets.get(id)));

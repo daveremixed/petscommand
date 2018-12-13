@@ -79,7 +79,7 @@ PetRecordItem would be used to log information and cost basis / fees for the pet
 to be attached to the record
 
 unfinished:
-wiring up search string to command line - see code and tests for current behavior
+testing command line
 
 Testing:
 Added some unit tests, more needed but timeboxed.
