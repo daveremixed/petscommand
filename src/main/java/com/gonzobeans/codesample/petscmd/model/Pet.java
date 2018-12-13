@@ -1,9 +1,5 @@
 package com.gonzobeans.codesample.petscmd.model;
 
-import com.google.common.collect.ImmutableList;
-
-import java.util.List;
-
 public class Pet {
     String id;
     String name;

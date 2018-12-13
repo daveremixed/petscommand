@@ -62,7 +62,7 @@ public class PetRepository {
     Map<String, String> getSearchMapFromString(String searchString) {
         Map<String, String> searchOptions = new HashMap<>();
 
-        List<String> searchPairs = Arrays.asList(searchString.split(","));
+        String[] searchPairs = searchString.split(",");
         for (String pair : searchPairs) {
             String[] keyValArray = pair.split(":");
             if (keyValArray.length == 2) {
@@ -91,7 +91,7 @@ public class PetRepository {
             petMatches = false;
         }
 
-        if (searchMap.containsKey("zipcode") && !pet.getGender().startsWith(searchMap.get("zipcode"))) {
+        if (searchMap.containsKey("zipcode") && !pet.getZipCode().startsWith(searchMap.get("zipcode"))) {
             petMatches = false;
         }
         return petMatches;
