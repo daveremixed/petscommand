@@ -54,6 +54,10 @@ public class PetRepository {
         return Optional.empty();
     }
 
+    public int getNumberOfEntries() {
+        return pets.size();
+    }
+
     //This function can be refactored out of class... pass the search map into the class.
     Map<String, String> getSearchMapFromString(String searchString) {
         Map<String, String> searchOptions = new HashMap<>();

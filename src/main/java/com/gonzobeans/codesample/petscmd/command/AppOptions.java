@@ -12,7 +12,12 @@ public class AppOptions {
                 .longOpt("file")
                 .desc("The path to the CSV data file").build();
 
+        Option search = Option.builder("s")
+                .longOpt("search")
+                .desc("The search string to execute").build();
+
         options.addOption(file);
+        options.addOption(search);
 
         return options;
     }
