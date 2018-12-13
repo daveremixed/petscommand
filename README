@@ -56,6 +56,8 @@ In your opinion, what’s helpful about version control systems? What’s annoyi
 NOTES:
 Strings used for Ids because it allows for more flexibility
 
+Decided to use POJOs instead of spring based on requirements.  I have other projects that use Spring.
+
 expediency:
 Since HashMap is just a temporary repository, no effort made to make this threadsafe.
 Assume no headers in CSV file -- should work if headers are present -- header row will be thrown out
@@ -63,4 +65,4 @@ If repetitions in IDs they will be overwritten silently
 If bad formatting in input, will be thrown out silently
 Searching will be case sensitive on the value side
 
-Ran into timebox on searches -- but the PetRepository has completed search in methods.
+Ran into timebox on searches -- but the PetRepository has completed search in methods.,
