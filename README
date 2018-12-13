@@ -1,0 +1,63 @@
+Cambia/ HealthSparq Take-Home Exercise Introduction
+
+Thanks for applying to HealthSparq! A wholly owned company of Cambia. This take-home exercise
+should give you a sense of the kind of technical skills we need to help us build world-class software. We
+hope you enjoy thinking about these questions and sharing your knowledge.
+Try to answer in a way that helps us understand not only what you know, but also how you think. Be
+prepared to talk about any of these answers in a follow-up session.
+Please submit answers to all of the exercises by checking them into a personal GitHub account and
+sending recruiter a link to the repository. Use GitHub in a way that demonstrates your thought process.
+Reach out if you have any questions.
+
+Programming
+
+Design a tool for pet adoption. The first feature set for this tool will intake some pets, and then search
+for pets by location (zip code), animal type, or animal gender.
+This is a starting point for conversation so please spend an hour or two, but not more than three, on the
+exercise.
+
+The initial desired functionality includes:
+• intake pets in bulk (see sample data below)
+• search for pets in a location
+• search for pets of a certain type
+• search for pets of a gender
+• search for pets by any combination of the above
+
+This should be backend work only and should not need to incorporate a database or persistent storage
+yet. It should be runnable, for example via the com.gonzobeans.codesample.petscmd.command line, with com.gonzobeans.codesample.petscmd.command line arguments to supply
+the input file and search options.
+
+Please document assumptions you are making and reach out if you have any questions.
+Optionally, if you have some allotted time left and really want to get these animals adopted, consider
+the adoption side of operations. How would you manage adoption eligibility, fees, and supply an
+adoption record of a pet? What else would you need to know?
+Feel free to write code or write out some ideas about how you might extend the tool to support
+adoption features.
+
+Sample csv data:
+Id Name Type Gender ZipCode
+1 Snoopy dog male 97205
+2 Willow cat female 97205
+3 Yoda dog neutered 90210
+4 Lassie dog spayed 90210
+5 Fluffly rabbit female 97215
+6 Rhea cat spayed 97215
+7 Lese cat spayed 97215
+8 Rascal dog male 97205
+
+Testing Methodology
+Share your thoughts on testing (unit & integration) the application you just built.
+
+Tools
+In your opinion, what’s helpful about version control systems? What’s annoying about them?
+
+
+=========
+NOTES:
+Strings used for Ids because it allows for more flexibility
+
+expediency:
+Since HashMap is just a temporary repository, no effort made to make this threadsafe.
+Assume no headers in CSV file
+If repetitions in IDs they will be overwritten silently
+If bad formatting in input, will be thrown out silently
